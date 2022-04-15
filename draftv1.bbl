@@ -1,0 +1,25 @@
+\begin{thebibliography}{xx}
+
+\harvarditem[Bernstein et~al.]{Bernstein, Gel'fand \harvardand\
+  Gel'fand}{1978}{bernstein_algebraic_1978}
+Bernstein, I.~N., Gel'fand, I.~M. \harvardand\ Gel'fand, S.~I.
+  \harvardyearleft 1978\harvardyearright , `Algebraic bundles over {Pn} and
+  problems of linear algebra', {\em Functional Analysis and Its Applications}
+  {\bf 12}(3),~212--214.
+\newline\harvardurl{http://link.springer.com/10.1007/BF01681435}
+
+\harvarditem[Eisenbud et~al.]{Eisenbud, Floystad \harvardand\
+  Schreyer}{2003}{eisenbud_sheaf_2003}
+Eisenbud, D., Floystad, G. \harvardand\ Schreyer, F.-O.  \harvardyearleft
+  2003\harvardyearright , `Sheaf {Cohomology} and {Free} {Resolutions} over
+  {Exterior} {Algebras}', {\em Transactions of the American Mathematical
+  Society} {\bf 355}(11),~4397--4426.
+\newblock arXiv: math/0104203.
+\newline\harvardurl{http://arxiv.org/abs/math/0104203}
+
+\harvarditem{Hartshorne}{2008}{hartshorne_algebraic_2008}
+Hartshorne, R.  \harvardyearleft 2008\harvardyearright , {\em Algebraic
+  geometry}, number~52 {\em in} `Graduate texts in mathematics', 14 edn,
+  Springer, New York, NY.
+
+\end{thebibliography}

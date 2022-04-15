@@ -1,0 +1,547 @@
+\documentclass[a4paper]{article}
+\usepackage[hmargin={30mm,30mm},vmargin={30mm,30mm}]{geometry}
+
+
+% FONT
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+%\usepackage{sectsty}
+%\allsectionsfont{\scshape}
+
+
+% CITATION STYLE
+\usepackage{harvard}
+
+
+% MATHS
+\usepackage{euler}
+\usepackage{amsmath, amsthm, amssymb, mathtools, stmaryrd}
+\usepackage{tikz-cd}
+\usepackage{enumerate}
+%\usepackage{unicode-math}
+
+
+% LINE SPACING
+\usepackage[parfill]{parskip}
+\usepackage[capitalise]{cleveref}
+\renewcommand{\baselinestretch}{1.25}
+
+
+% TODOS
+\usepackage[colorinlistoftodos]{todonotes}
+
+
+% TABLE OF CONTENTS
+\usepackage{tocloft}
+\renewcommand\contentsname{}
+\renewcommand\cftsecfont{}
+\renewcommand\cftsecpagefont{}
+\setlength\cftbeforesecskip{3pt}
+\setcounter{tocdepth}{2}
+
+
+% THEOREM STYLES
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}[section]
+
+\newtheorem{theorem}[defn]{Theorem}
+\newtheorem*{theorem*}{Theorem}
+\newtheorem{prop}[defn]{Proposition}
+\newtheorem{lemma}[defn]{Lemma}
+\newtheorem{cor}[defn]{Corollary}
+
+\newtheorem{example}[defn]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[defn]{Remark}
+
+
+% NEW ARROWS
+\usepackage{stackrel}
+\newcommand{\leftrarrows}{\mathrel{\raise.75ex\hbox{\oalign{%
+  $\scriptstyle\leftarrow$\cr
+  \vrule width0pt height.5ex$\hfil\scriptstyle\relbar$\cr}}}}
+\newcommand{\lrightarrows}{\mathrel{\raise.75ex\hbox{\oalign{%
+  $\scriptstyle\relbar$\hfil\cr
+  $\scriptstyle\vrule width0pt height.5ex\smash\rightarrow$\cr}}}}
+\newcommand{\Rrelbar}{\mathrel{\raise.75ex\hbox{\oalign{%
+  $\scriptstyle\relbar$\cr
+  \vrule width0pt height.5ex$\scriptstyle\relbar$}}}}
+\newcommand{\longleftrightarrows}{\leftrarrows\joinrel\Rrelbar\joinrel\lrightarrows}
+
+\makeatletter
+\def\leftrightarrowsfill@{\arrowfill@\leftrarrows\Rrelbar\lrightarrows}
+\newcommand{\xleftrightarrows}[2][]{\ext@arrow 3399\leftrightarrowsfill@{#1}{#2}}
+\makeatother
+
+\usepackage{scalerel}
+\newcommand{\simrightarrow}{\mathrel{\ooalign{
+     $\to$\cr
+     \hidewidth\raise.3em\hbox{$\scaleobj{.7}{\sim}\mkern7mu$}\cr
+    }
+  }
+}
+
+
+% CUSTOM COMMANDS
+\newcommand{\grMod}{\ensuremath{\text{-grMod}}}
+\newcommand{\Mod}{\ensuremath{\text{-Mod}}}
+\newcommand{\Sym}{\ensuremath{\text{Sym}\,}}
+\newcommand{\exterior}{\ensuremath{\Lambda^\bullet\,}}
+
+\newcommand{\Ch}{\ensuremath{\text{Ch}}}
+\newcommand{\coker}{\ensuremath{\text{coker}}}
+\newcommand{\img}{\ensuremath{\text{im}}}
+\newcommand{\Hom}{\ensuremath{\text{Hom}}}
+
+\newcommand{\Proj}{\ensuremath{\text{Proj}}}
+\newcommand{\Pn}{\ensuremath{\mathbb{P}^n}}
+\newcommand{\coh}{\ensuremath{\text{coh-}}}
+
+\newcommand{\gnab}{{\textexclamdown}}
+
+% DOCUMENT
+\title{(Co)Derived Equivalences in Algebra and Geometry}
+\date{\vspace{-2.5em} Easter 2022}
+
+\begin{document} 
+\bibliographystyle{agsm}
+
+\maketitle
+\tableofcontents 
+
+\vspace{1em}
+
+Fix a field \(k\), and let \(X\) and \(\Xi\) be dual \(k\)-vector spaces of
+dimension \(n+1\) with dual bases \((x_i)\) and \((\xi_i)\) respectively. The goal
+of this exposition is to examine equivalences of various categories that arise
+naturally in this setting from algebro-geometric constructions. In particular,
+we look at chain complexes of 
+\begin{enumerate}[(i)]
+    \item modules over the symmetric algebra \(A:=
+        \Sym^\bullet(V)\),
+    \item modules over the exterior algebra \(A^!:= \exterior(V)\),
+    \item coherent sheaves over \(\Pn := \Proj(\Sym^\bullet (V))\), the
+        projectivisation of \(\Xi\).
+\end{enumerate}
+
+\begin{example}\label{setstage}
+In the simplest case when \(X, \Xi\) are one-dimensional, the data of a module
+over \(A = k[x]\) involves a \(k\)-vector space \(M\) with a map
+\(M\xrightarrow{x} M\) which can be seen as a cochain complex \(F(M)\) of
+\(k\)-vector spaces with differential \(d\) of degree \(1\). The graded algebra
+\(A^! = k[\xi]/(\xi^2)\) acts naturally on \(F(M)\) via the degree \(1\)
+chain map \(F(M)\xrightarrow{\xi} F(M)\) given by
+\[\begin{tikzcd}
+    \cdots \arrow[r] & 0 \arrow[r] \arrow[rd] & M \arrow[r] \arrow[rd, "1"] & M
+    \arrow[r] \arrow[rd] & \cdots &   \\ & \cdots \arrow[r] & M \arrow[r] & M
+    \arrow[r] & 0 \arrow[r] & \cdots
+\end{tikzcd}.\]
+Consider the cochain complex of \(A\)-modules
+\[\cdots \rightarrow 0 \rightarrow M\otimes_k A
+\xrightarrow{ d\otimes 1 + \xi \otimes x} M\otimes_k A \rightarrow 0 \rightarrow
+\cdots ,\]
+concentrated in degrees \(-1\) and \(0\). This has the same underlying vector
+spaces as the complex \(F(M)\otimes_k A\), but the differential has been
+`twisted' to remember the \(A^!\)-action. This complex is exact everywhere
+except in degree \(0\), where it has cohomology \(M\). Since the modules
+appearing in it are free, we have recovered a free resolution of \(M\). 
+\end{example}
+
+This is the first example of what may be called \textit{Koszul duality}, a broad
+term encompassing various equivalences across algebra, geometry, and representation
+theory. The duality between symmetric and exterior algebras over finite
+dimensional vector spaces was first studied by
+\citeasnoun{bernstein_algebraic_1978}, who exhibit an adjunction between the
+categories of cochain complexes of graded modules over \(A\) and \(A^!\).  
+\begin{theorem*}
+    There are adjoint functors
+    \[ \Ch(A\grMod) \xleftrightarrows[F]{G} \Ch(A^!\grMod)\]
+    such that any complex \(M^\bullet\) of graded
+    \(A\)-modules has free resolution \(GF(M^\bullet)\), and any complex
+    \(N^\bullet\) of graded \(A^!\)-modules has injective resolution
+    \(FG(N^\bullet)\). 
+\end{theorem*}
+In \cref{sec-BGG}, we look at \possessivecite{eisenbud_sheaf_2003}
+treatment of the Bernstein-Gel'fand-Gel'fand (BGG) correspondence described
+above. To turn the adjunction into an equivalence of categories, we need to
+employ the machinery of Verdier's \textit{derived categories}. Passing to the
+corresponding derived categories of modules has the effect that all
+\textit{quasi-isomorphisms} (i.e.\ chain maps that induce isomorphisms on
+homology) become isomorphisms.
+
+\citeasnoun{bernstein_algebraic_1978} use the correspondence between coherent
+sheaves on \Pn\ and graded \(A\)-modules (see for example Chapter II of
+\citeasnoun{hartshorne_algebraic_2008}) to describe the derived category
+\(D^b(\coh\Pn)\) of projective \(n\)-space. In \ref{sec-cohPn} we use
+\todo{finish this paragraph} 
+
+\todo{insert paragraph about lefevre}
+
+\section{Categories of complexes}\label{sec-trianglecat}
+
+\subsection{Chain complexes}
+
+\begin{example}[Modules over an algebra]
+\end{example}
+
+\begin{example}[Comodules over a coalgebra]
+\end{example}
+
+\section{The Bernstein-Gel'fand-Gel'fand correspondence}\label{sec-BGG}
+
+\todo{describe section}
+
+\subsection{Data}
+
+\subsubsection{Symmetric and exterior algebras}
+
+Given an \(n+1\)-dimensional \(k\)-vector space \(V\),
+the \textit{tensor algebra} is the \(k\)-vector space 
+\[ T(V) = \bigoplus_{i\geq 0}V^{\otimes i}\] 
+with a product \(\nabla: T(V)\otimes T(V) \rightarrow T(V)\) induced by the
+natural identifications \(V^{\otimes i}\otimes V^{\otimes j} \simrightarrow
+V^{\otimes(i+j)}\). This is an associative algebra with a natural
+\(\mathbb{Z}_{\geq 0}\)-grading. The \textit{symmetric algebra}
+\(\Sym^\bullet(V)\) and the \textit{exterior algebra} \(\exterior(V)\) are then
+the graded algebras defined as quotients of \(T(V)\) by certain two-sided
+ideals, namely
+\[\Sym^\bullet(V) = \frac{T(V)}{(x\otimes y - y\otimes x \;|\; x,y\in V)},
+\qquad \exterior(V) = \frac{T(V)}{(x\otimes x \;|\; x\in V)}.\]
+Since the ideals are generated by homogeneous elements, these algebras
+inherit gradings from \(T(V)\).
+
+We continue to use \(\nabla\) for the product morphism on either algebra,
+though the corresponding bilinear map on \(\exterior{V}\) is often written
+\(\wedge\).
+
+Since we are primarily concerned with the algebras \(A=\Sym^\bullet(X)\) and
+\(A^!=\exterior(\Xi)\), we redefine the grading on \(A^!\) as
+\(A^!_{-i}=\Lambda^i \Xi\). This amounts to a change of sign from the usual
+grading, but the convention ensures that the dual vector spaces \(X\) and
+\(\Xi\) lie in degrees \(1\) and \(-1\) in their respective algebras.
+
+\subsubsection{The exterior coalgebra}
+\label{subsubsec-exteriorcoalgebra}
+
+The \textit{exterior coalgebra} on \(\Xi\) is defined as the linear dual of
+\(A^!\), written \(A^\gnab := \Hom_k(A^!, k)\). \(A^\gnab\) has the
+\(\mathbb{Z}\)-grading \(A^\gnab_i=\Hom_k(A^!_{-i}, k)\) and is naturally an
+\(A^!\)-module via \(a \cdot f(a') = (-1)^{\text{deg}\, a} f(a\wedge a')\) for
+\(a\in A^!\) homogeneous, \(f\in \Hom(A^!,k)\). Moreover, for any \(k\)-vector
+space \(N\) we have the natural isomorphism of \(A^!\)-modules \(\Hom_{k}(A^!,
+N)\cong A^\gnab \otimes_k N\).  
+
+Choosing a basis \(x_i\) for \(X\) fixes an isomorphism \(X\cong\Hom_k(\Xi,
+k)=A^\gnab_1\), which can be extended to get the isomorphism of graded \(k\)-vector
+spaces
+\[A^\gnab = \bigoplus_i \Hom_k(\Lambda^i\Xi, k) \cong \bigoplus_i \Lambda^i X =
+\exterior(X).\] 
+Write \(\tau:A^\gnab \rightarrow A\) for the \(k\)-linear map which identifies
+the subspaces of \(A^\gnab\) and \(A\) corresponding to \(X\), and is \(0\)
+elsewhere. 
+
+
+\paragraph{The coproduct on \(A^\gnab\).}
+Being the linear dual of a finite dimensional algebra, \(A^\gnab\) has a natural
+(coassociative counital) coalgebra structure which comes from dualising the
+(associative unital) product \({\nabla: A^!\otimes_k A^!\rightarrow A^!}\). This
+is called the \textit{shuffle coproduct}, and we give an explicit description of
+it as follows. Given a collection of indices \(\underline{\alpha}=\{\alpha_1\,<\,
+...\,<\,\alpha_i\}\subseteq \{0,...,n\}\), write \(x_{\underline{\alpha}}\) for the
+standard basis element of \(A^\gnab\) given by \({x_{\alpha_1}\wedge
+x_{\alpha_2} \wedge ... \wedge x_{\alpha_i}}\) (in particular,
+\(x_\emptyset = 1\)). The vector \(\xi_{\underline{\alpha}}\) is defined
+similarly. We say a tuple \((\underline{\beta}, \underline{\beta'})\) of subsets
+is a \textit{break} of \(\underline{\alpha}\) if \((\beta_1\,<...<\,\beta_p,
+\beta'_1\,<...<\,\beta'_q)\) is a permutation of \((\alpha_1\,<...<\,
+\alpha_i)\) (in other words, \(\underline{\alpha} = \underline{\beta} \sqcup
+\underline{\beta'}\)). The \textit{sign} of this break, written \(\langle
+\underline{\beta}, \underline{\beta'}\rangle\), is defined to be the sign of the
+corresponding permutation. Thus we have have 
+\[\nabla(x_{\underline{\beta}} \otimes
+    x_{\underline{\beta'}})=x_{\underline{\beta}} \wedge
+    x_{\underline{\beta'}}=\langle \underline{\beta}, \underline{\beta'}\rangle
+\, x_{\underline{\alpha}}.\] 
+This allows us to write the coproduct on \(A^\gnab\) as 
+\[\Delta(x_{\underline{\alpha}}) =
+    \smashoperator[r]{\sum\limits_{(\underline{\beta},\underline{\beta'})\in
+    \text{br}(\underline{\alpha})}} \langle \underline{\beta},
+\underline{\beta'}\rangle \, x_{\underline{\beta}} \otimes
+x_{\underline{\beta'}}\]
+where \(\text{br}(\underline{\alpha})\) is the set of all breaks of
+\(\underline{\alpha}\).  Recalling that \(A^\gnab\otimes_k A^\gnab\) is
+\(\mathbb{Z}\)-graded with \(\bigoplus_{p+q=i}A^\gnab_p\otimes A^\gnab_q\) in
+degree \(i\), we observe that the map \(\Delta\) respects grading hence
+\(A^\gnab\) is a \textit{graded coalgebra}.
+
+\subsubsection{Graded chain complexes}
+\label{subsec-chaincomp}
+
+Objects of \(\Ch(A\grMod)\) are chain complexes of graded \(A\)-modules in
+which the differentials are morphisms in \(A\grMod\) (i.e.\ \(A\)-module
+homomorphisms which preserve degree). Such an object can be viewed as a
+\(\mathbb{Z}^2\)-graded \(k\)-vector space \(\bigoplus_{i,j}M^i_j\) with an
+endomorphism \(d\) (the differential) such that 
+\begin{enumerate}[]
+    \item \(d\circ d=0\), 
+    \item \(d\) has degree \((1,0)\) i.e.\ \(d(M^i_j)\subseteq M^{i+1}_j\),
+        and
+    \item for each \(i\in \mathbb{Z}\), \(M^i_\bullet = \bigoplus_{j}
+        M^i_j\) is a graded \(A\)-module.  
+\end{enumerate} 
+Likewise, an object \(N\in \Ch(A^!\grMod)\) can be seen as a \(\mathbb{Z}^2\)-graded
+\(k\)-vector space \(\oplus_{i,j}N^i_j\) with a differential \(\partial\) of
+degree \((1,0)\). We shall use the two viewpoints on interchangeably, switching
+between them whenever convenient to provide a clearer picture. In particular,
+the ability to view a complex as a single module with additional structure
+allows for cleaner definitions and proofs, see for instance \cref{adjunction}.
+
+For a chain complex \(\mathbf{M}=\bigoplus_{i,j}M^i_j\), we say the lower
+indices denote the \textit{internal} (or \textit{Adam's}) grading, while the
+upper indices denote the \textit{differential} (or \textit{cohomological})
+degree.  We use `\(\langle\cdot\rangle\)' to denote shifts in Adam's gradings,
+continuing to use `\([\cdot]\)' to denote shifts in differential gradings.  Thus
+for example we have \(M\langle q \rangle^i_j = M^i_{q+j}\).
+
+\subsection{Twisted Functors}
+
+We now define additive functors 
+\[\Ch(A\grMod) \xleftrightarrows[F]{G} \Ch(A^!\grMod)\]
+on which the BGG correspondence is based. In the framework of
+\(\mathbb{Z}^2\)-graded vector spaces described in \cref{subsec-chaincomp}, we have 
+\[\bigoplus_{i,j}F(\mathbf{M})^i_j \cong \Hom_{k}\left(A^!,\,
+\bigoplus_{p,q}M^p_q\right) = A^\gnab \otimes_k
+\left(\bigoplus_{p,q}M^p_q\right), \qquad \bigoplus_{i,j}G(\mathbf{N})^i_j \cong
+A\otimes_k \left(\bigoplus_{p,q}N^p_q\right).\] 
+However, care is needed to define the gradings and differentials since, for
+example, na\"ively applying the functor \(\Hom_k(A^!,-)\) would lose all
+\(A\)-module structure. The key is to modify the na\"ive differential by adding a
+`twist' as in \cref{setstage}.
+
+\subsubsection{Defining the functor \(F\)} 
+We first define \(F\) on the category \(A\grMod\), seen as the full subcategory of
+\(\Ch(A\grMod)\) whose objects are complexes concentrated in differential degree
+\(0\). If \(M^0_\bullet\) is a graded \(A\)-module, we define \(F(M^0_\bullet)\)
+to be the chain complex of \(A^!\)-modules given by a
+\begin{align*} 
+    \cdots \rightarrow A^\gnab\langle -i \rangle \otimes_k M^0_i
+    &\xrightarrow{\;\partial\;} A^\gnab \langle -i-1 \rangle \otimes_k
+    M^0_{i+1} \rightarrow \cdots \\ 
+    a\otimes m &\longmapsto \sum_\alpha \xi_\alpha a \otimes x_\alpha m.  
+\end{align*} 
+The module \(A^\gnab\langle -i \rangle \otimes_k M^0_i\) is naturally
+isomorphic to \(\Hom_k(A^!\langle i \rangle, M^0_i)\) and inherits an Adam's
+grading from \(A^\gnab\) with the vector space \(A^\gnab_{j-i}\otimes_k M^0_i\)
+forming the \(j\)th graded piece. These shifts in grading have been chosen
+precisely so that the differential \(\partial\) has degree \((1,0)\),  while
+the graded commutativity of \(A^!\) implies \(\partial\circ \partial=0\).
+Thus we indeed have a chain complex of \(A^!\)-modules. 
+
+Given a morphism \(M^0_\bullet \rightarrow M^1_\bullet\) in \(A\grMod\),
+the functoriality of tensor products induces \(A^!\)-module
+homomorphisms \(A^\gnab\langle-i \rangle \otimes_k M^0_i \rightarrow
+A^\gnab\langle-i\rangle \otimes_k M^0_i\) which are compatible with the
+differentials (i.e.\ the natural squares commute). Thus we have an additive functor
+\({F:A\grMod\rightarrow \Ch(A^!\grMod)}\).
+
+To extend \(F\) to arbitrary chain complexes \(\mathbf{M}=(\bigoplus_{i,j}M^i_j,
+d)\in \Ch(A\grMod)\), we observe that the functoriality of \(F\) gives us a (commuting) bicomplex
+\[\begin{tikzcd}[row sep=large]
+    \vdots 
+           &            
+           & 
+           & \vdots 
+           & \vdots 
+           & \\
+    F(M^{i+1}_\bullet) \arrow[u]
+           & 
+           & \cdots \arrow[r]
+           & A^\gnab \langle -j \rangle\otimes_k M^{i+1}_j \arrow[r] \arrow[u]
+           & A^\gnab \langle -j-1 \rangle\otimes_k M^{i+1}_{j+1} \arrow[r] \arrow[u]
+           & \cdots \\
+    F(M^{i}_\bullet) \arrow[u]
+           & 
+           & \cdots \arrow[r]
+           & A^\gnab \langle -j \rangle\otimes_k M^{i}_j  \arrow[r] \arrow[u]
+           & A^\gnab\langle -j-1 \rangle\otimes_k M^{i}_{j+1}  \arrow[r] \arrow[u]
+           & \cdots \\
+    \vdots \arrow[u]
+           &            
+           & 
+           & \vdots \arrow[u] 
+           & \vdots \arrow[u]
+           &   
+\end{tikzcd}\]
+where the functorially induced vertical maps are \(1\otimes d\). Define
+\(F(\mathbf{M})\) to be the total complex of this bicomplex, given by
+\begin{gather*}
+    \cdots \rightarrow \bigoplus_{p+q=i}A^\gnab\langle -q \rangle \otimes_k
+    M^p_q \xrightarrow{\;\partial\;} \bigoplus_{p+q=i+1}A^\gnab\langle -q
+    \rangle\otimes_k M^p_q \rightarrow \cdots,  \\ \\
+    \partial: a\otimes m \longmapsto a\otimes dm + (-1)^{\#m}\sum_\alpha
+    \xi_\alpha a \otimes x_\alpha m
+\end{gather*}
+where \(\#m\) is the differential degree of \(m\in \mathbf{M}\). It is clear
+that each \(F(\textbf{M})^i_\bullet = \bigoplus_{p+q=i}A^\gnab\langle -q\rangle
+\otimes_k M^p_q\) is a graded \(A^!\) module, and the signs introduced in the
+total complex construction ensure \(\partial \circ \partial = 0\). An explicit
+check confirms \(\partial\) has degree \((1,0)\), so we indeed have an object of
+\(\Ch(A^!\grMod)\).
+
+\paragraph{The twist using comodules.}
+\label{comoduletwist}
+Observe that the differential \(\partial\) differs from the na\"ive differential
+\(1\otimes d\) on the tensor product by the horizontal maps, which are the
+`twists' we have been alluding to. These have a nice description using the fact
+that a graded module \(N_\bullet\in A^!\grMod\) has the structure of a
+graded \(A^\gnab\)-comodule via the map
+\begin{align*}
+    \Delta: \quad N_\bullet &\longrightarrow N_\bullet \otimes_k A^\gnab \\
+    n &\longmapsto \smashoperator[r]{\sum\limits_{\underline{\alpha}\subseteq
+    \{0,...,n\}}} \xi_{\underline{\alpha}} n
+    \; \otimes   x_{\underline{\alpha}}.
+\end{align*}
+
+Applying this idea to the \(A^!\)-modules \(A^\gnab\langle -i \rangle\), we get
+a commuting square
+\[\begin{tikzcd}[column sep=large, row sep=huge]  
+    \bigoplus\limits_{u+v=j-q}A^\gnab_{u} \otimes_k A^\gnab_v \otimes_k
+    M^{i-q}_q 
+    \arrow[r, "1\otimes \tau \otimes 1"]
+    & A^\gnab_{j-q-1} \otimes_k A_1 \otimes_k M^{i-q}_{q} 
+    \arrow[d, "1\otimes \nabla"] \\
+    A^\gnab_{j-q} \otimes_k M^{i-q}_q
+    \arrow[u, "\Delta \otimes 1"] 
+    \arrow[r, "(-1)^{i-q}(\partial \,- \,1\otimes d)"]
+    &A^\gnab_{j-q-1} \otimes_k M^{i-q}_{q+1}
+\end{tikzcd}\]
+
+where \(\nabla: A\otimes_k M^{i-q}_\bullet \rightarrow M^{i-q}_\bullet\) defines the
+\(A\)-module structure on \(M\), and \(\tau:A^\gnab \rightarrow A^!\) is the
+morphism defined in \cref{subsubsec-exteriorcoalgebra} which identifies
+\(A^\gnab_1\) with \(A_{1}\), annihilating other graded pieces. 
+
+In summary, \(F(\mathbf{M})\) as a \(\mathbb{Z}^2\)-graded vector space is
+simply \(A^\gnab \otimes_{k} \mathbf{M}\)  with \((i,j)\)th piece
+\[F(\mathbf{M})^i_j = \bigoplus_{p+q=i}A^\gnab_{j-q}\otimes_k M^p_q\]
+and differential given on \(A^\gnab_{j-q}\otimes_k M^p_q\) by 
+\[1\otimes d + (-1)^{p}(1\otimes \nabla)\circ (1\otimes \tau \otimes
+1)\circ(\Delta\otimes 1).\]
+
+\subsubsection{The left adjoint to \(F\)}
+
+The functor \(G:\Ch(A^!\grMod)\rightarrow \Ch(A\grMod)\) is analogously defined,
+and maps the chain complex \(\mathbf{N}=(\bigoplus_{i,j}N, \partial)\) to \(G(\mathbf{N})\) given by
+\begin{gather*}
+    \cdots \rightarrow \bigoplus_{p-q=i} N^p_q \otimes_k A\langle -q \rangle
+    \xrightarrow{\;d\;} \bigoplus_{p-q=i+1}N^p_q \otimes_k A\langle -q \rangle
+    \rightarrow \cdots \\ \\
+    d: n\otimes a \longmapsto \partial n\otimes a + (-1)^{\#n} \sum_\alpha
+    \xi_\alpha n \otimes x_\alpha a
+\end{gather*}
+where \(\#n\) is the differential degree of \(n\in \mathbf{N}\). The Adam's
+grading on each \(G(\mathbf{N})^i_\bullet\) is inherited from \(A\), and is
+given by
+\[G(\mathbf{N})^i_j =   \bigoplus_{p-q=i}N^p_q \; \otimes_k A_{j-q}.\]
+Recalling that every \(A^!\)-module is a \(A^\gnab\)-comodule (see
+\cref{comoduletwist}), we can use the comodule structure-map \(\Delta: N^i_\bullet
+\rightarrow N^i_\bullet \otimes A^\gnab \) to define the differential on
+\(N^p_q\otimes_k A_{j-q}\) as
+\[\partial \otimes 1 + (-1)^{p}(1\otimes \nabla)\circ (1\otimes \tau \otimes
+1)\circ(\Delta \otimes 1).\]
+
+\paragraph{The adjunction.} 
+Having defined the functors \(F\) and \(G\), we show that \(G\) is left adjoint
+to \(F\). Spelled out this means given \(\mathbf{M}\in \Ch(A\grMod)\) and
+\(\mathbf{N}\in \Ch(A^!\grMod)\), there is a natural isomorphism of abelian
+groups
+\[\Hom_{\Ch(A\grMod)}(G(\mathbf{N}), \mathbf{M}) \cong
+\Hom_{\Ch(A^!\grMod)}(\mathbf{N}, F(\mathbf{M})).\]
+At its heart this is a \(\otimes\)-\(\Hom\) adjunction, as we shall illustrate in
+the special case of module categories below. 
+
+\begin{lemma}[\citeasnoun{eisenbud_sheaf_2003}] \label{adjunction-simple}
+    Given modules \(M\in A\Mod\) and \(N\in A^!\Mod\), there are natural
+    isomorphisms of abelian groups
+    \[\Hom_{A}(A\otimes_k N, M) \cong \Hom_k(N,M) \cong \Hom_{A^!}(N,
+    \Hom_{k}(A^!,M)).\]
+    \begin{proof}
+        Choosing a basis \(n_\alpha\) for \(N\), the first isomorphism follows
+        from observing that the \(A\)-module \(A\otimes_k N\) is freely
+        generated by \(1\otimes n_\alpha\). 
+
+        The second isomorphism sends \(\varphi\in \Hom_k(N,M)\) to the map
+        \(\varphi^!: N\rightarrow \Hom_k(A^!, M)\) such that for any \(n\in N\)
+        and \(a\in A^!\) homogeneous we have 
+        \[\varphi^!(n)(a) = (-1)^{\text{deg}\,a}\varphi(an)\] 
+        The inverse correspondence sends \(\varphi^!\in \Hom_{A^!}(N,
+        \Hom_k(A^!,M))\) to \(\varphi\in \Hom_k(N,M)\) given by 
+        \[\varphi(n)= \varphi^!(n)(1).\]
+    \end{proof}
+\end{lemma}
+
+We now exhibit the general adjunction for \(F\) and \(G\), and it is here that
+the flexibility of interpreting a chain complex \(\mathbf{M}\) of graded modules
+as a single \(\mathbb{Z}^2\)-graded module \(\bigoplus_{i,j}M^i_j\) (see
+\cref{subsec-chaincomp}) really comes handy.  Interpreting \(\Ch(A\grMod)\) as a
+subcategory of \(A\Mod\) (likewise for \(A^!\)), we use \cref{adjunction-simple}
+to identify \(\Hom_{\Ch(A\grMod)}(G(\mathbf{N}),\mathbf{M})\subset
+\Hom_A(\mathbf{N}\otimes_k A, \mathbf{M})\) and
+\(\Hom_{\Ch(A^!\grMod)}(\mathbf{N},F(\mathbf{M}))\subset \Hom_{A^!}(\mathbf{N},
+\Hom_k(A^!,\mathbf{M}))\) with the same subgroup of
+\(\Hom_k(\mathbf{N},\mathbf{M})\).
+
+\begin{theorem}[\citeasnoun{bernstein_algebraic_1978}] \label{adjunction}
+    The functor \(G\), from the category of complexes of graded \(A^!\)-modules
+    to the category of complexes of graded \(A\)-modules, is a left adjoint to
+    the functor \(F\).
+    \begin{proof}
+        Given \(\bar{\varphi}\in \Hom_{A}(G(\mathbf{N}),
+        \mathbf{M})\), the corresponding map \(\varphi\in
+        \Hom_k(\mathbf{N},\mathbf{M})\) found in \cref{adjunction-simple} is
+        given by \(\varphi(n)=\bar\varphi(n\otimes 1)\). Thus \(\bar\varphi\)
+        has degree \((0,0)\) if and only if \(\bar\varphi(N^i_j \otimes_k A_0)
+        \subseteq M^{i-j}_j\), if and only if \(\varphi(N^i_j)\subseteq
+        M^{i-j}_j\).  Moreover for \(n\in N^i_j\), direct computation shows
+        \begin{align*}
+            (d_M \circ \bar\varphi - \bar\varphi \circ d_{G(\mathbf{N})}) (n
+            \otimes 1) \; = \; (d_M \circ \varphi - \varphi \circ
+            \partial_N) (n) - (-1)^i \sum_\alpha x_\alpha \varphi(\xi_\alpha n),
+        \end{align*}
+        thus \(\bar\varphi\) is a morphism in \(\Ch(A\grMod)\) if and only if
+        \begin{equation}\label{adjunctcondition}
+            \varphi(N^i_j)\subseteq M^{i-j}_j, \quad \text{and} \quad d_M\circ
+            \varphi - \varphi \circ \partial_N = \sum_\alpha x_\alpha \varphi
+            \xi_\alpha        
+        \end{equation}
+        where we write \(\sum_\alpha x_\alpha\varphi \xi_\alpha\) for the map
+        that takes \(n\in N^i_j\) to \((-1)^i\sum_\alpha x_\alpha
+        \varphi(\xi_\alpha n)\).
+
+        Likewise given \(\varphi^!\in \Hom_{A^!}(\mathbf{N},F(\mathbf{M}))\),
+        repeating the above argument shows \(\varphi^!\) is an element of
+        \(\Hom_{\Ch(A^!\grMod)}(\mathbf{N},F(\mathbf{M})\) if and only if
+        the corresponding map \(\varphi \in \Hom_k(\mathbf{N},\mathbf{M})\)
+        satisfies \eqref{adjunctcondition}. This shows that the isomorphisms
+        given in \cref{adjunction-simple} restrict to isomorphisms
+        \[\Hom_{\Ch(A\grMod)}(G(\mathbf{N}),\mathbf{M})\cong \{\varphi\in \Hom_k(\mathbf{N},\mathbf{M}) \text{ satisfying \eqref{adjunctcondition}}\} \cong \Hom_{\Ch(A^!\grMod)}(\mathbf{N},F(\mathbf{M})) \]
+        thereby showing \(G\) is left adjoint to \(F\).
+    \end{proof}
+\end{theorem}
+
+\begin{example}
+\end{example}
+
+\subsubsection{The (co)unit of adjunction}
+
+\section{Coherent sheaves on \Pn}\label{sec-cohPn}
+
+\subsection{The Tate resolution and Beilinson monads}
+
+\section{Koszul duality after Keller (2003)}\label{sec-keller}
+
+\bibliography{references}
+\addcontentsline{toc}{section}{References}
+
+\end{document}
