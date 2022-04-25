@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.3.30)  15 APR 2022 14:14
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.3.30)  25 APR 2022 13:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -587,7 +587,7 @@ Package: scalerel 2016/12/29 v1.8 Routines for constrained scaling and stretchin
 \LMex=\skip95
 \LMpt=\skip96
 )
-LaTeX Font Info:    Trying to load font information for T1+bch on input line 107.
+LaTeX Font Info:    Trying to load font information for T1+bch on input line 117.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/t1bch.fd
 File: t1bch.fd 2004/10/18 font definitions for T1/bch.
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
@@ -604,26 +604,26 @@ File: l3backend-xetex.def 2022-02-07 L3 backend support: XeTeX
 ) (./draftv1.aux)
 \openout1 = `draftv1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 107.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 107.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 117.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 117.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -659,70 +659,70 @@ LaTeX Font Info:    ... okay on input line 107.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 107.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 117.
 LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
-(Font)              `operators' in the math version `normal' on input line 107.
+(Font)              `operators' in the math version `normal' on input line 117.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> T1/bch/m/up on input line 107.
+(Font)                  OT1/cmr/m/n --> T1/bch/m/up on input line 117.
 LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
-(Font)              `operators' in the math version `bold' on input line 107.
+(Font)              `operators' in the math version `bold' on input line 117.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/bch/m/up on input line 107.
+(Font)                  OT1/cmr/bx/n --> T1/bch/m/up on input line 117.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  T1/bch/m/up --> T1/bch/b/up on input line 107.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 107.
+(Font)                  T1/bch/m/up --> T1/bch/b/up on input line 117.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 117.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/bch/b/up on input line 107.
+(Font)                  OT1/cmr/bx/n --> T1/bch/b/up on input line 117.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/bch/b/up on input line 107.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 107.
+(Font)                  OT1/cmr/bx/n --> T1/bch/b/up on input line 117.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 117.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/lmss/m/up on input line 107.
+(Font)                  OT1/cmss/m/n --> T1/lmss/m/up on input line 117.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/lmss/m/up on input line 107.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 107.
+(Font)                  OT1/cmss/bx/n --> T1/lmss/m/up on input line 117.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 117.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/bch/m/it on input line 107.
+(Font)                  OT1/cmr/m/it --> T1/bch/m/it on input line 117.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/bch/m/it on input line 107.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 107.
+(Font)                  OT1/cmr/bx/it --> T1/bch/m/it on input line 117.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 117.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/lmtt/m/up on input line 107.
+(Font)                  OT1/cmtt/m/n --> T1/lmtt/m/up on input line 117.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/lmtt/m/up on input line 107.
+(Font)                  OT1/cmtt/m/n --> T1/lmtt/m/up on input line 117.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/lmss/m/up --> T1/lmss/b/up on input line 107.
+(Font)                  T1/lmss/m/up --> T1/lmss/b/up on input line 117.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/bch/m/it --> T1/bch/b/it on input line 107.
+(Font)                  T1/bch/m/it --> T1/bch/b/it on input line 117.
 
 LaTeX Font Warning: Font shape `T1/bch/m/up' undefined
-(Font)              using `T1/bch/m/n' instead on input line 110.
+(Font)              using `T1/bch/m/n' instead on input line 120.
 
-LaTeX Font Info:    Trying to load font information for U+eur on input line 110.
+LaTeX Font Info:    Trying to load font information for U+eur on input line 120.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/ueur.fd
 File: ueur.fd 2013/01/14 v3.01 Euler Roman
 )
-LaTeX Font Info:    Trying to load font information for U+euf on input line 110.
+LaTeX Font Info:    Trying to load font information for U+euf on input line 120.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
-LaTeX Font Info:    Trying to load font information for U+eus on input line 110.
+LaTeX Font Info:    Trying to load font information for U+eus on input line 120.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/ueus.fd
 File: ueus.fd 2013/01/14 v3.01 Euler Script
 )
-LaTeX Font Info:    Trying to load font information for U+euex on input line 110.
+LaTeX Font Info:    Trying to load font information for U+euex on input line 120.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/ueuex.fd
 File: ueuex.fd 2013/01/14 v3.01 Euler extra symbols
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 110.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 120.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 110.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 120.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+stmry on input line 110.
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 120.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
 
 LaTeX Warning: No \author given.
@@ -739,194 +739,298 @@ LaTeX Warning: Marginpar on page 2 moved.
 
 [2]
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 228.
+LaTeX Font Warning: Font shape `T1/bch/b/up' undefined
+(Font)              using `T1/bch/b/n' instead on input line 253.
+
+[3] [4] [5]
+Overfull \hbox (0.91792pt too wide) in paragraph at lines 492--494
+\T1/bch/m/up/10 We briefly dis-cuss the sheaves in-volved be-fore prov-ing the ex-is-tence of Beilin-son's res-o-lu-tion. 
+ []
+
+[6]
+Overfull \hbox (0.25845pt too wide) in paragraph at lines 522--529
+\U/eur/m/n/10 D[]\OMS/cmsy/m/n/10 h\U/eur/m/n/10 j\OMS/cmsy/m/n/10 i$ \T1/bch/m/up/10 for this mod-ule. In par-tic-u-lar, note that $\U/eur/m/n/10 
+$ \T1/bch/m/up/10 and its twists are rank $\U/eur/m/n/10 n$ \T1/bch/m/up/10 lo-cally free sheaves. 
+ []
+
+[7]
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 620.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 228.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 620.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 229.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 621.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 233.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 625.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 236.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 628.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 238.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 630.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 240.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 632.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 241.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 633.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 246.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 638.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 246.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 638.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 252.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 644.
+
+[8]
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 658.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 266.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 665.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 273.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 665.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 273.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 666.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 274.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 666.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 274.
-
-
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 276.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 668.
 
 
 LaTeX Warning: The counter will not be printed.
-             The label is:  on input line 286.
-
-[3]
-
-LaTeX Font Warning: Font shape `T1/bch/b/up' undefined
-(Font)              using `T1/bch/b/n' instead on input line 300.
+             The label is:  on input line 678.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 314.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 706.
+
+[9]
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 724.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 332.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 724.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 332.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 724.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 332.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 724.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 332.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 725.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 333.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 727.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 335.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 727.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 335.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 735.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 343.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 736.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 344.
-
-
-Overfull \hbox (16.40175pt too wide) in paragraph at lines 341--347
+Overfull \hbox (10.46724pt too wide) in paragraph at lines 733--739
 \T1/bch/m/up/10 the nat-u-ral squares com-mute). Thus we have an ad-di-tive func-tor $[]$. 
  []
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 360.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 753.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 361.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 754.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 366.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 759.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 367.
-
-[4]
-
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 384.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 760.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 384.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 779.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 384.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 779.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 384.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 779.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 386.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 779.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 398.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 781.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 404.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 793.
+
+[10]
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 799.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 404.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 799.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 406.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 801.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 409.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 804.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 409.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 804.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 412.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 807.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 414.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 809.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 417.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 812.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 421.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 816.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 423.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 818.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 426.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 821.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 427.
-
-[5]
-
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 428.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 822.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 447.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 823.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 449.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 844.
 
 
-Overfull \hbox (11.28192pt too wide) in paragraph at lines 484--494
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 846.
+
+[11]
+Overfull \hbox (8.1031pt too wide) in paragraph at lines 879--889
 [][]\U/euf/m/n/10 (\T1/bch/b/n/10 N\U/eur/m/n/10 ; F\U/euf/m/n/10 (\T1/bch/b/n/10 M\U/euf/m/n/10 )) \OMS/cmsy/m/n/10 ^^Z [][]\U/euf/m/n/10 (\T1/bch/b/n/10 N\U/eur/m/n/10 ; [][]\U/euf/m/n/10 (\U/eur/m/n/10 A[]; \T1/bch/b/n/10 M\U/euf/m/n/10 ))$ \T1/bch/m/up/10 with the same sub-group of $[][]\U/euf/m/n/10 (\T1/bch/b/n/10 N\U/eur/m/n/10 ; \T1/bch/b/n/10 M\U/euf/m/n/10 )$\T1/bch/m/up/10 . 
  []
 
-[6] (./draftv1.bbl [7]) [8] (./draftv1.aux)
+[12]
+Overfull \hbox (3.68887pt too wide) in paragraph at lines 947--951
+[]\T1/bch/b/n/10 Proposition 3.4. []\T1/bch/m/up/10 The func-tor $\U/eur/m/n/10 F$ \T1/bch/m/up/10 maps el-e-ments of $\U/eus/m/n/10 C\U/euf/m/n/10 (\U/eur/m/n/10 A[]\U/euf/m/n/10 )$ \T1/bch/m/up/10 to com-plexes of in-jec-tive $\U/eur/m/n/10 A[]$\T1/bch/m/up/10 -modules,
+ []
+
+
+Overfull \hbox (0.76207pt too wide) in paragraph at lines 951--954
+[]\T1/bch/m/up/10 The state-ment for $\U/eur/m/n/10 G$ \T1/bch/m/up/10 is im-me-di-ate from def-i-ni-tion, so we prove that for any $\T1/bch/b/n/10 M \OMS/cmsy/m/n/10 2 \U/eus/m/n/10 C\U/euf/m/n/10 (\U/eur/m/n/10 A[]\U/euf/m/n/10 )$\T1/bch/m/up/10 ,
+ []
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 965.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 996.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 996.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 996.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 996.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 996.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 996.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 996.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 996.
+
+[13]
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 1046.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 1046.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 1046.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 1046.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 1055.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 1057.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 1061.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 1063.
+
+[14]
+Overfull \hbox (7.54391pt too wide) in paragraph at lines 1098--1103
+[]\T1/bch/m/up/10 Now it suf-fices to show that the map $\U/eur/m/n/10 "[] \U/euf/m/n/10 : \U/eur/m/n/10 G\U/euf/m/n/10 (\U/eur/m/n/10 F\U/euf/m/n/10 (\T1/bch/b/n/10 M\U/euf/m/n/10 ))[] \U/euex/m/n/10 ! \U/eur/m/n/10 M[]$ \T1/bch/m/up/10 is the cok-er-nel of $[]$.
+ []
+
+
+Overfull \hbox (12.08759pt too wide) detected at line 1118
+[]
+ []
+
+[15] [16] [17]
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 1297.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 1298.
+
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 1316.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/lm/t1lmss.fd
+File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+
+LaTeX Font Warning: Font shape `T1/lmss/m/up' undefined
+(Font)              using `T1/lmss/m/n' instead on input line 1316.
+
+[18]
+Overfull \hbox (4.23529pt too wide) in paragraph at lines 1370--1373
+\T1/bch/m/up/10 which is not acyclic (the only non-zero dif-fer-en-tial is not sur-jec-tive), hence non-zero in $\U/eus/m/n/10 D\U/euf/m/n/10 (\U/eur/m/n/10 A[]\U/euf/m/n/10 )$\T1/bch/m/up/10 . 
+ []
+
+[19] (./draftv1.bbl [20]) [21] (./draftv1.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 19696 strings out of 476180
- 407297 string characters out of 5809554
- 688276 words of memory out of 5000000
- 40063 multiletter control sequences out of 15000+600000
- 511139 words of font info for 107 fonts, out of 8000000 for 9000
+ 20366 strings out of 476180
+ 423924 string characters out of 5809554
+ 711980 words of memory out of 5000000
+ 40727 multiletter control sequences out of 15000+600000
+ 522235 words of font info for 111 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 114i,18n,118p,533b,1034s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 114i,18n,118p,533b,1125s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on draftv1.xdv (8 pages, 70740 bytes).
+Output written on draftv1.xdv (21 pages, 193488 bytes).

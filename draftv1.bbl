@@ -1,5 +1,11 @@
 \begin{thebibliography}{xx}
 
+\harvarditem{Beilinson}{1978}{beilinson_coherent_1978}
+Beilinson, A.~A.  \harvardyearleft 1978\harvardyearright , `Coherent sheaves on
+  {Pn} and problems of linear algebra', {\em Functional Analysis and Its
+  Applications} {\bf 12}(3),~214--216.
+\newline\harvardurl{http://link.springer.com/10.1007/BF01681436}
+
 \harvarditem[Bernstein et~al.]{Bernstein, Gel'fand \harvardand\
   Gel'fand}{1978}{bernstein_algebraic_1978}
 Bernstein, I.~N., Gel'fand, I.~M. \harvardand\ Gel'fand, S.~I.
@@ -7,6 +13,26 @@ Bernstein, I.~N., Gel'fand, I.~M. \harvardand\ Gel'fand, S.~I.
   problems of linear algebra', {\em Functional Analysis and Its Applications}
   {\bf 12}(3),~212--214.
 \newline\harvardurl{http://link.springer.com/10.1007/BF01681435}
+
+\harvarditem{Bourbaki}{1989}{bourbaki_algebra_1989}
+Bourbaki, N.  \harvardyearleft 1989\harvardyearright , {\em Algebra}, Elements
+  of mathematics, reprint edn, Springer, Berlin.
+
+\harvarditem{Caldararu}{2005}{caldararu_derived_2005}
+Caldararu, A.  \harvardyearleft 2005\harvardyearright , `Derived categories of
+  sheaves: a skimming', {\em arXiv:math/0501094} .
+\newblock arXiv: math/0501094.
+\newline\harvardurl{http://arxiv.org/abs/math/0501094}
+
+\harvarditem{Carbone}{2016}{carbone_resolution_nodate}
+Carbone, R.  \harvardyearleft 2016\harvardyearright , `The resolution of the
+  diagonal and the derived category on some homogeneous spaces'.
+\newline\harvardurl{https://www.math.u-bordeaux.fr/~ybilu/algant/documents/theses/CARBONE.pdf}
+
+\harvarditem{Eisenbud}{1995}{eisenbud_commutative_1995}
+Eisenbud, D.  \harvardyearleft 1995\harvardyearright , {\em Commutative algebra
+  with a view toward algebraic geometry}, number 150 {\em in} `Graduate texts
+  in mathematics', Springer-Verlag, New York.
 
 \harvarditem[Eisenbud et~al.]{Eisenbud, Floystad \harvardand\
   Schreyer}{2003}{eisenbud_sheaf_2003}
@@ -17,9 +43,41 @@ Eisenbud, D., Floystad, G. \harvardand\ Schreyer, F.-O.  \harvardyearleft
 \newblock arXiv: math/0104203.
 \newline\harvardurl{http://arxiv.org/abs/math/0104203}
 
+\harvarditem{Eisenbud \harvardand\ Goto}{1984}{eisenbud_linear_1984}
+Eisenbud, D. \harvardand\ Goto, S.  \harvardyearleft 1984\harvardyearright ,
+  `Linear free resolutions and minimal multiplicity', {\em Journal of Algebra}
+  {\bf 88}(1),~89--133.
+\newline\harvardurl{https://linkinghub.elsevier.com/retrieve/pii/0021869384900929}
+
 \harvarditem{Hartshorne}{2008}{hartshorne_algebraic_2008}
 Hartshorne, R.  \harvardyearleft 2008\harvardyearright , {\em Algebraic
   geometry}, number~52 {\em in} `Graduate texts in mathematics', 14 edn,
   Springer, New York, NY.
+
+\harvarditem{Huybrechts}{2006}{huybrechts_fourier-mukai_2006}
+Huybrechts, D.  \harvardyearleft 2006\harvardyearright , {\em Fourier-{Mukai}
+  transforms in algebraic geometry}, Oxford mathematical monographs, Clarendon,
+  Oxford ; New York.
+\newblock OCLC: ocm64097295.
+
+\harvarditem{Keller}{2003}{keller_koszul_2003}
+Keller, B.  \harvardyearleft 2003\harvardyearright , `Koszul {Duality} and
+  {Coderived} {Categories} ({After} {K}. {Lefevre})'.
+
+\harvarditem{Lam}{1999}{lam_lectures_1999}
+Lam, T.~Y.  \harvardyearleft 1999\harvardyearright , {\em Lectures on modules
+  and rings}, number 189 {\em in} `Graduate texts in mathematics', Springer,
+  New York.
+
+\harvarditem{Loday}{2012}{loday_algebraic_2012}
+Loday, J.~L.  \harvardyearleft 2012\harvardyearright , {\em Algebraic operads},
+  number 346 {\em in} `Grundlehren der mathematischen wissenschaften',
+  Springer, New York.
+
+\harvarditem{Weibel}{2003}{weibel_introduction_2003}
+Weibel, C.~A.  \harvardyearleft 2003\harvardyearright , {\em An introduction to
+  homological algebra}, number~38 {\em in} `Cambridge studies in advanced
+  mathematics', reprint. 1997, transf. to digital print edn, Cambridge Univ.
+  Press, Cambridge.
 
 \end{thebibliography}
