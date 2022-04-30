@@ -1,35 +1,44 @@
 \contentsline {section}{\numberline {1}Categories of complexes}{3}{}%
-\contentsline {subsection}{\numberline {1.1}Abelian categories}{3}{}%
-\contentsline {subsection}{\numberline {1.2}Bicomplexes}{3}{}%
-\contentsline {subsubsection}{\numberline {1.2.1}Spectral sequences}{3}{}%
-\contentsline {subsection}{\numberline {1.3}Homotopy and derived categories}{3}{}%
-\contentsline {subsubsection}{\numberline {1.3.1}Generators and exceptional sequences}{3}{}%
-\contentsline {subsubsection}{\numberline {1.3.2}Derived functors}{3}{}%
-\contentsline {section}{\numberline {2}Coherent sheaves on \ensuremath {{\mathbb {P}^n}}}{3}{}%
-\contentsline {subsection}{\numberline {2.1}Fourier-Mukai transforms}{3}{}%
-\contentsline {subsection}{\numberline {2.2}Koszul resolutions}{4}{}%
-\contentsline {paragraph}{Koszul complexes in geometry.}{6}{}%
-\contentsline {subsection}{\numberline {2.3}Beilinson's theorem}{6}{}%
-\contentsline {paragraph}{Sheaves on \ensuremath {{\mathbb {P}^n}}.}{6}{}%
-\contentsline {paragraph}{Resolution of the diagonal.}{7}{}%
-\contentsline {section}{\numberline {3}The Bernstein-Gel'fand-Gel'fand correspondence}{7}{}%
-\contentsline {subsection}{\numberline {3.1}Data}{8}{}%
-\contentsline {subsubsection}{\numberline {3.1.1}Symmetric and exterior algebras}{8}{}%
-\contentsline {subsubsection}{\numberline {3.1.2}The exterior coalgebra}{8}{}%
-\contentsline {paragraph}{The coproduct on \(A^{\textexclamdown }\).}{9}{}%
-\contentsline {subsubsection}{\numberline {3.1.3}Graded chain complexes}{9}{}%
-\contentsline {subsection}{\numberline {3.2}Twisted functors}{9}{}%
-\contentsline {subsubsection}{\numberline {3.2.1}Defining the functor \(F\)}{10}{}%
-\contentsline {paragraph}{The twist using comodules.}{11}{}%
-\contentsline {subsubsection}{\numberline {3.2.2}The left adjoint to \(F\)}{11}{}%
-\contentsline {paragraph}{The adjunction.}{12}{}%
-\contentsline {subsection}{\numberline {3.3}Koszul resolutions}{13}{}%
-\contentsline {subsubsection}{\numberline {3.3.1}The Koszul complex}{13}{}%
-\contentsline {subsubsection}{\numberline {3.3.2}Resolutions in general}{14}{}%
-\contentsline {paragraph}{Syzygies and regularity of modules.}{17}{}%
-\contentsline {subsection}{\numberline {3.4}Descending to triangulated categories}{18}{}%
-\contentsline {paragraph}{Bernstein-Gel'fand-Gel'fand equivalence}{19}{}%
-\contentsline {section}{\numberline {4}Coherent sheaves on \ensuremath {{\mathbb {P}^n}}}{20}{}%
-\contentsline {subsection}{\numberline {4.1}The Tate resolution and Beilinson monads}{20}{}%
-\contentsline {section}{\numberline {5}Koszul duality after Keller (2003)}{20}{}%
-\contentsline {section}{References}{21}{}%
+\contentsline {paragraph}{Short exact sequences.}{4}{}%
+\contentsline {paragraph}{Cohomology.}{4}{}%
+\contentsline {subsection}{\numberline {1.1}Bicomplexes}{5}{}%
+\contentsline {subsubsection}{\numberline {1.1.1}Spectral sequences.}{5}{}%
+\contentsline {subsection}{\numberline {1.2}Three abelian categories}{7}{}%
+\contentsline {subsubsection}{\numberline {1.2.1}Symmetric and exterior algebras.}{7}{}%
+\contentsline {paragraph}{Graded modules.}{7}{}%
+\contentsline {subsubsection}{\numberline {1.2.2}The exterior coalgebra}{8}{}%
+\contentsline {paragraph}{The coproduct on \(A^{\textexclamdown }\).}{8}{}%
+\contentsline {subsubsection}{\numberline {1.2.3}Graded chain complexes}{8}{}%
+\contentsline {subsubsection}{\numberline {1.2.4}Coherent sheaves}{9}{}%
+\contentsline {paragraph}{Sheaves on \ensuremath {{\mathbb {P}^n}}.}{9}{}%
+\contentsline {subsection}{\numberline {1.3}Homotopy and Derived categories}{10}{}%
+\contentsline {subsubsection}{\numberline {1.3.1}The homotopy category}{12}{}%
+\contentsline {subsubsection}{\numberline {1.3.2}Localisation and the derived category}{12}{}%
+\contentsline {subsubsection}{\numberline {1.3.3}Triangulated categories}{13}{}%
+\contentsline {subsubsection}{\numberline {1.3.4}Derived functors}{14}{}%
+\contentsline {paragraph}{Descent to smaller triangulated subcategories.}{15}{}%
+\contentsline {paragraph}{Derived functors.}{15}{}%
+\contentsline {subsubsection}{\numberline {1.3.5}Generators of a triangulated category}{17}{}%
+\contentsline {section}{\numberline {2}Coherent sheaves on \ensuremath {{\mathbb {P}^n}}}{18}{}%
+\contentsline {subsection}{\numberline {2.1}Fourier-Mukai transforms}{18}{}%
+\contentsline {subsection}{\numberline {2.2}Koszul resolutions}{19}{}%
+\contentsline {paragraph}{Koszul complexes in geometry.}{21}{}%
+\contentsline {subsection}{\numberline {2.3}Beilinson's theorem}{21}{}%
+\contentsline {paragraph}{Resolution of the diagonal.}{21}{}%
+\contentsline {paragraph}{}{24}{}%
+\contentsline {section}{\numberline {3}The Bernstein-Gel'fand-Gel'fand correspondence}{24}{}%
+\contentsline {subsection}{\numberline {3.1}Data}{24}{}%
+\contentsline {subsection}{\numberline {3.2}Twisted functors}{24}{}%
+\contentsline {subsubsection}{\numberline {3.2.1}Defining the functor \(F\)}{24}{}%
+\contentsline {paragraph}{The twist using comodules.}{25}{}%
+\contentsline {subsubsection}{\numberline {3.2.2}The left adjoint to \(F\)}{26}{}%
+\contentsline {paragraph}{The adjunction.}{26}{}%
+\contentsline {subsection}{\numberline {3.3}Koszul resolutions}{27}{}%
+\contentsline {subsubsection}{\numberline {3.3.1}The Koszul complex}{28}{}%
+\contentsline {subsubsection}{\numberline {3.3.2}Resolutions in general}{29}{}%
+\contentsline {paragraph}{Syzygies and regularity of modules.}{31}{}%
+\contentsline {subsection}{\numberline {3.4}Descending to triangulated categories}{33}{}%
+\contentsline {paragraph}{Bernstein-Gel'fand-Gel'fand equivalence}{34}{}%
+\contentsline {subsection}{\numberline {3.5}The Tate resolution and Beilinson monads}{35}{}%
+\contentsline {section}{\numberline {4}Koszul duality after Keller (2003)}{35}{}%
+\contentsline {section}{References}{36}{}%

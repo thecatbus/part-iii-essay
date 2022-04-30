@@ -74,6 +74,17 @@ Loday, J.~L.  \harvardyearleft 2012\harvardyearright , {\em Algebraic operads},
   number 346 {\em in} `Grundlehren der mathematischen wissenschaften',
   Springer, New York.
 
+\harvarditem{{\relax The Stacks project authors}}{2022}{stacks-project}
+{\relax The Stacks project authors}  \harvardyearleft 2022\harvardyearright ,
+  `The stacks project'.
+\newline\harvardurl{https://stacks.math.columbia.edu}
+
+\harvarditem{Thomas}{2001}{thomas_derived_2001}
+Thomas, R.~P.  \harvardyearleft 2001\harvardyearright , `Derived categories for
+  the working mathematician', {\em arXiv:math/0001045} .
+\newblock arXiv: math/0001045.
+\newline\harvardurl{http://arxiv.org/abs/math/0001045}
+
 \harvarditem{Weibel}{2003}{weibel_introduction_2003}
 Weibel, C.~A.  \harvardyearleft 2003\harvardyearright , {\em An introduction to
   homological algebra}, number~38 {\em in} `Cambridge studies in advanced
