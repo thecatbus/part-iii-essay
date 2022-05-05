@@ -1,0 +1,43 @@
+\contentsline {paragraph}{Acknowledgement.}{3}{}%
+\contentsline {section}{\numberline {1}Categories of complexes}{3}{}%
+\contentsline {subsection}{\numberline {1.1}Bicomplexes}{5}{}%
+\contentsline {subsubsection}{\numberline {1.1.1}Spectral sequences.}{5}{}%
+\contentsline {subsection}{\numberline {1.2}Three abelian categories}{7}{}%
+\contentsline {subsubsection}{\numberline {1.2.1}Symmetric and exterior algebras.}{7}{}%
+\contentsline {paragraph}{Graded modules.}{8}{}%
+\contentsline {subsubsection}{\numberline {1.2.2}The exterior coalgebra}{8}{}%
+\contentsline {paragraph}{The coproduct on \(A^{\textexclamdown }\).}{8}{}%
+\contentsline {subsubsection}{\numberline {1.2.3}Graded chain complexes}{9}{}%
+\contentsline {subsubsection}{\numberline {1.2.4}Coherent sheaves}{9}{}%
+\contentsline {paragraph}{Sheaves on \ensuremath {{\mathbb {P}^n}}.}{9}{}%
+\contentsline {subsection}{\numberline {1.3}Homotopy and Derived categories}{10}{}%
+\contentsline {subsubsection}{\numberline {1.3.1}The homotopy category}{12}{}%
+\contentsline {subsubsection}{\numberline {1.3.2}Localisation and the derived category}{12}{}%
+\contentsline {subsubsection}{\numberline {1.3.3}Triangulated categories}{13}{}%
+\contentsline {subsubsection}{\numberline {1.3.4}Generators of a triangulated category}{15}{}%
+\contentsline {subsubsection}{\numberline {1.3.5}Functors between derived categories}{16}{}%
+\contentsline {paragraph}{Descent to smaller triangulated subcategories.}{16}{}%
+\contentsline {paragraph}{Derived functors.}{17}{}%
+\contentsline {section}{\numberline {2}Coherent sheaves on \ensuremath {{\mathbb {P}^n}}}{18}{}%
+\contentsline {subsection}{\numberline {2.1}Fourier-Mukai transforms}{19}{}%
+\contentsline {subsection}{\numberline {2.2}Koszul resolutions}{20}{}%
+\contentsline {paragraph}{Koszul complexes in geometry.}{21}{}%
+\contentsline {subsection}{\numberline {2.3}Beilinson's theorem}{22}{}%
+\contentsline {subsubsection}{\numberline {2.3.1}Resolution of the diagonal}{22}{}%
+\contentsline {subsubsection}{\numberline {2.3.2}Generating the category}{25}{}%
+\contentsline {paragraph}{General form of the decomposition.}{27}{}%
+\contentsline {subsubsection}{\numberline {2.3.3}Equivalence with module categories}{28}{}%
+\contentsline {section}{\numberline {3}The Bernstein-Gel'fand-Gel'fand correspondence}{29}{}%
+\contentsline {subsection}{\numberline {3.1}Twisted functors}{29}{}%
+\contentsline {subsubsection}{\numberline {3.1.1}Defining the functor \(F\)}{29}{}%
+\contentsline {paragraph}{The twist using comodules.}{30}{}%
+\contentsline {subsubsection}{\numberline {3.1.2}The left adjoint to \(F\)}{31}{}%
+\contentsline {paragraph}{The adjunction.}{31}{}%
+\contentsline {subsection}{\numberline {3.2}BGG resolutions}{32}{}%
+\contentsline {subsubsection}{\numberline {3.2.1}Resolutions in general}{33}{}%
+\contentsline {paragraph}{Syzygies and regularity of modules.}{36}{}%
+\contentsline {subsection}{\numberline {3.3}Descending to triangulated categories}{37}{}%
+\contentsline {paragraph}{Bernstein-Gel'fand-Gel'fand equivalence.}{38}{}%
+\contentsline {subsection}{\numberline {3.4}The Tate resolution and Beilinson monads}{39}{}%
+\contentsline {subsection}{\numberline {3.5}Koszul duality}{40}{}%
+\contentsline {section}{References}{42}{}%
