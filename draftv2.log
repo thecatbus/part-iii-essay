@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.3.30)  5 MAY 2022 03:09
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.3.30)  5 MAY 2022 03:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1058,27 +1058,28 @@ Overfull \hbox (3.0903pt too wide) in paragraph at lines 2800--2803
  []
 
 [38]
-Overfull \hbox (3.66794pt too wide) in paragraph at lines 2877--2882
+Overfull \hbox (3.66794pt too wide) in paragraph at lines 2878--2883
 \T1/bch/m/up/10 Eisenbud et al. (2003) ex-hibits a con-nec-tion be-tween Beilin-son's the-o-rem and the work of Bernstein-
  []
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 2895.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 2896.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 2900.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 2901.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 2903.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 2904.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 2903.
-
-
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 2905.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 2904.
 
 [39]
-Overfull \hbox (0.92801pt too wide) in paragraph at lines 2918--2922
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 2906.
+
+
+Overfull \hbox (0.92801pt too wide) in paragraph at lines 2919--2923
 []\T1/bch/m/up/10 Observe that the un-der-ly-ing vec-tor spaces do agree with those com-puted in Propo-si-tion 2.17.
  []
 
@@ -1102,4 +1103,4 @@ Here is how much of TeX's memory you used:
  1348 hyphenation exceptions out of 8191
  114i,18n,118p,533b,1109s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on draftv2.xdv (42 pages, 362160 bytes).
+Output written on draftv2.xdv (42 pages, 362088 bytes).
